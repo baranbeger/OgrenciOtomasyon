@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="471.0" prefWidth="303.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.baran.controller.OgrtmnDersGirController">
+   <children>
+      <Label layoutX="81.0" prefHeight="40.0" prefWidth="141.0" text="Ders Kaydet" textFill="#ab1515">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtdersgir" labelFloat="true" layoutX="65.0" layoutY="50.0" prefHeight="25.0" prefWidth="213.0" promptText="Açacağınız Ders İsmini Giriniz:" />
+      <JFXTextField fx:id="txticerikgir" labelFloat="true" layoutX="65.0" layoutY="99.0" prefHeight="25.0" prefWidth="213.0" promptText="Dersin İçeriğini Giriniz:" />
+      <JFXButton layoutX="81.0" layoutY="189.0" onAction="#icerikKaydetBtn" prefHeight="25.0" prefWidth="108.0" ripplerFill="#739a1e" text="Kaydet" textFill="#9e1212">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="81.0" layoutY="150.0" onAction="#icerikEkleBtn" prefHeight="25.0" prefWidth="108.0" ripplerFill="#739a1e" text="Ekle" textFill="#9e1212">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <ListView fx:id="listvw" layoutX="41.0" layoutY="236.0" prefHeight="234.0" prefWidth="222.0" />
+   </children>
+</AnchorPane>

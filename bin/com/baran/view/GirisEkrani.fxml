@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="400.0" style="-fx-background-color: #182C61;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.baran.controller.GirisEkraniController">
+   <children>
+      <Label layoutX="81.0" layoutY="32.0" prefHeight="38.0" prefWidth="269.0" text="Öğrenci Otomasyonu" textFill="#cdc1b3">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="116.0" layoutY="238.0" onAction="#OgrtmnGirisAcbtn" prefHeight="62.0" prefWidth="169.0" ripplerFill="#20bbd0" text="Öğretmen Girişi" textFill="#d3c4c4">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="116.0" layoutY="135.0" onAction="#ogrSayfasiniAcbtn" prefHeight="62.0" prefWidth="169.0" ripplerFill="#2aa7c9" text="Öğrenci Girişi" textFill="#e4b5b5">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <AnchorPane fx:id="ogretmenGiris" layoutX="56.0" layoutY="125.0" prefHeight="331.0" prefWidth="400.0" style="-fx-background-color: #f7f1e3;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <JFXTextField fx:id="txtogrtmnad" labelFloat="true" layoutX="92.0" layoutY="72.0" prefHeight="38.0" prefWidth="205.0" promptText="Öğretmen Kullanici Adını Giriniz:" />
+            <JFXTextField fx:id="txtogrtmnsifre" labelFloat="true" layoutX="98.0" layoutY="166.0" prefHeight="38.0" prefWidth="205.0" promptText="Öğretmen Şifrenizi Giriniz:" />
+            <JFXButton buttonType="RAISED" layoutX="247.0" layoutY="254.0" onAction="#ogrtmnGirisbtn" prefHeight="48.0" prefWidth="112.0" ripplerFill="#972d90" text="Giriş" textFill="#8a1e1e">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="41.0" layoutY="257.0" onAction="#ogrtmnKaydolbtn" prefHeight="38.0" prefWidth="103.0" ripplerFill="#972d90" text="Kaydol" textFill="#941818">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="14.0" layoutY="-5.0" prefHeight="38.0" prefWidth="153.0" text="Öğretmen Giriş Sayfası" textFill="#722222">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="OgrGirisSayfa" layoutX="107.0" layoutY="138.0" prefHeight="344.0" prefWidth="400.0" style="-fx-background-color: #f7f1e3;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label layoutX="28.0" layoutY="14.0" prefHeight="19.0" prefWidth="135.0" text="Öğrenci Giriş Sayfası" textFill="#790e0e">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtogrkullaniciad" labelFloat="true" layoutX="81.0" layoutY="74.0" prefHeight="42.0" prefWidth="229.0" promptText="Öğrenci Kullanıcı Adınızı Giriniz:" />
+            <JFXTextField fx:id="txtogrsifre" labelFloat="true" layoutX="86.0" layoutY="172.0" prefHeight="42.0" prefWidth="229.0" promptText="Öğrenci Giriş Şifrenizi Giriniz:" />
+            <JFXButton layoutX="236.0" layoutY="255.0" onAction="#ogrGirisbtn" prefHeight="48.0" prefWidth="129.0" ripplerFill="#2d1e8d" text="Giriş" textFill="#7c0e0e">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="38.0" layoutY="255.0" onAction="#ogrKaydolbtn" prefHeight="48.0" prefWidth="129.0" ripplerFill="#2d1e8d" text="Kaydol" textFill="#7c0e0e">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

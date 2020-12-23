@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.baran.controller.OgrtmnOgrenciBilgileriController">
+   <children>
+      <SplitPane dividerPositions="0.29797979797979796" layoutX="200.0" layoutY="78.0" prefHeight="160.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <JFXComboBox fx:id="cmbderslbl" focusColor="#bf2065" layoutX="13.0" layoutY="31.0" onAction="#cmbderssec" prefHeight="25.0" prefWidth="173.0" promptText="Ders Seç" unFocusColor="#a11010" />
+                  <JFXComboBox fx:id="cmbsorulbl" focusColor="#bf2065" layoutX="13.0" layoutY="84.0" onAction="#cmbsorusec" prefHeight="25.0" prefWidth="173.0" promptText="Soru Seç" unFocusColor="#a11010" />
+                  <JFXButton layoutX="21.0" layoutY="225.0" onAction="#listeleBtn" prefHeight="40.0" prefWidth="133.0" ripplerFill="#192897" text="Listele" textFill="#a41313">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="21.0" layoutY="377.0" onAction="#kaydetBtn" prefHeight="40.0" prefWidth="133.0" ripplerFill="#192897" text="Kaydet" textFill="#a41313">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <Label layoutX="21.0" layoutY="304.0" prefHeight="17.0" prefWidth="133.0" text="cevabı görmek için tıkla">
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="ogrNo" layoutX="49.0" layoutY="333.0" prefHeight="17.0" prefWidth="65.0" text="131523109">
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <TableView fx:id="tblvw" layoutX="135.0" layoutY="76.0" onMouseClicked="#tblSec" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <columns>
+                        <TableColumn fx:id="tblvwno" prefWidth="75.0" text="ogrno" />
+                        <TableColumn fx:id="tblvwisim" prefWidth="75.0" text="ogrisim" />
+                        <TableColumn fx:id="tblvwsoyisim" prefWidth="75.0" text="ogrsoyisim" />
+                        <TableColumn fx:id="tblvwcevaplar" prefWidth="75.0" text="cevaplar" />
+                        <TableColumn fx:id="tblvwCevaptarih" prefWidth="75.0" text="cevap tarih" />
+                        <TableColumn fx:id="tblvwnotlar" prefWidth="75.0" text="notlar" />
+                        <TableColumn fx:id="tblvwnotlandirildi" prefWidth="75.0" text="notlandırıldı" />
+                     </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

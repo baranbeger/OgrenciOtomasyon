@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="427.0" prefWidth="367.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.baran.controller.OgrDersSecController">
+   <children>
+      <Label layoutX="103.0" layoutY="33.0" text="Ders Seçme Sayfası" textFill="#ab1414">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="lblcmb" labelFloat="true" layoutX="76.0" layoutY="100.0" onAction="#cmbDersSec" prefHeight="25.0" prefWidth="217.0" promptText="Almak istediğiniz Dersleri Seciniz" />
+      <Label layoutX="123.0" layoutY="159.0" prefHeight="20.0" prefWidth="123.0" text="Aldığınız Dersler" textFill="#0a0707">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ListView fx:id="lstvw" layoutX="64.0" layoutY="227.0" prefHeight="200.0" prefWidth="254.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="64.0" AnchorPane.rightAnchor="49.0" />
+      <JFXButton layoutX="10.0" layoutY="185.0" onAction="#ekleBtn" prefHeight="29.0" prefWidth="73.0" ripplerFill="#9a1414" text="ekle" textFill="#4028e1">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="285.0" layoutY="185.0" onAction="#cikisBtn" prefHeight="29.0" prefWidth="66.0" ripplerFill="#9a1414" text="çıkış" textFill="#4028e1">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

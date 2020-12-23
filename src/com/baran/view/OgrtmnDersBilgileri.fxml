@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="510.0" prefWidth="354.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.baran.controller.OgrtmnDersBilgileriController">
+   <children>
+      <Label layoutX="115.0" layoutY="23.0" prefHeight="21.0" prefWidth="111.0" text="Ders Bilgileri" textFill="#b51212">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbDers" focusColor="#1f3f9e" labelFloat="true" layoutX="102.0" layoutY="77.0" onAction="#cmbderssec" prefHeight="25.0" prefWidth="137.0" promptText="Ders Sec" unFocusColor="#ae2222" />
+      <ListView fx:id="listvwicerik" layoutX="52.0" layoutY="195.0" prefHeight="290.0" prefWidth="251.0" visible="false" AnchorPane.bottomAnchor="0.0" />
+      <JFXButton layoutX="14.0" layoutY="143.0" onAction="#ogrSayisi" prefHeight="29.0" prefWidth="105.0" ripplerFill="#13a479" text="Öğrenci Sayısı" textFill="#8d1717">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="118.0" layoutY="143.0" onAction="#kayitliOgrenciler" prefHeight="29.0" prefWidth="124.0" ripplerFill="#13a479" text="Kayıtlı Öğrenciler" textFill="#8d1717">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="242.0" layoutY="143.0" onAction="#dersİcerikler" prefHeight="29.0" prefWidth="98.0" ripplerFill="#13a479" text="İçerikler" textFill="#8d1717">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="lblicerik" layoutX="145.0" layoutY="186.0" prefHeight="17.0" prefWidth="81.0" text="içerikler" visible="false">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblvw" layoutX="86.0" layoutY="196.0" prefHeight="331.0" prefWidth="354.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <columns>
+            <TableColumn fx:id="tblvwno" prefWidth="116.0" text="Öğrenci Numarası" />
+            <TableColumn fx:id="tblvwisim" prefWidth="131.0" text="Öğrenci İsimleri" />
+            <TableColumn fx:id="tblvwsoyisim" minWidth="9.0" prefWidth="63.0" text="Öğrenci Soyisimler" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</AnchorPane>

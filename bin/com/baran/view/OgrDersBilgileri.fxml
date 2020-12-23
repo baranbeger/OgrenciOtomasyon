@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="368.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.baran.controller.OgrDersBilgileriController">
+   <children>
+      <JFXComboBox fx:id="lblderscmb" labelFloat="true" layoutX="101.0" layoutY="65.0" onAction="#dersSecCmb" prefHeight="25.0" prefWidth="167.0" promptText="Ders Seç" />
+      <Label layoutX="125.0" layoutY="14.0" prefHeight="21.0" prefWidth="119.0" text="Ders Bilgileri" textFill="#b51818">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="iceriklbl" layoutX="188.0" layoutY="130.0" onAction="#iceriklerBtn" prefHeight="29.0" prefWidth="112.0" ripplerFill="#220e94" text="Ders  içerikleri" textFill="#bf1a1a">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="Orneklbl" layoutX="26.0" layoutY="130.0" onAction="#orneklerBtn" prefHeight="29.0" prefWidth="112.0" ripplerFill="#220e94" text="Örnekler" textFill="#bf1a1a">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <ListView fx:id="icerilLstvw" layoutX="90.0" layoutY="182.0" prefHeight="255.0" prefWidth="187.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="90.0" />
+      <JFXListView fx:id="listCozumNo" layoutX="54.0" layoutY="184.0" onMouseClicked="#listTikla" prefHeight="280.0" prefWidth="83.0" visible="false" AnchorPane.leftAnchor="0.0" />
+      <JFXListView fx:id="listCozumler" layoutX="84.0" layoutY="184.0" prefHeight="280.0" prefWidth="284.0" visible="false" />
+      <JFXComboBox fx:id="konusecCmb" labelFloat="true" layoutX="168.0" layoutY="132.0" onAction="#konuActionCmb" prefHeight="25.0" prefWidth="144.0" promptText="Konu Sec" unFocusColor="#a82020" visible="false" />
+   </children>
+</AnchorPane>
